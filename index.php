@@ -19,7 +19,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 <div class="w3-content" style="max-width:1532px;">
 
   <div class="w3-container w3-margin-top" id="costs">
-    <h3>Cost Calculator</h3>
+    <h3>Booking App</h3>
     <p>Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</p>
   </div>
   <?php if (!$_POST) { ?>
@@ -108,6 +108,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
       echo "<img src='images/commodoreHotel.jpg'/>";
     }else if($hotelName==="Southern Sun"){
       echo "<img src='images/southernSun.jpg'/>";
+      echo "<img src='images/southernPool.jpg'/>";
+      echo "<img src='images/southernRooms.jpg'/>";
+      echo "<img src='images/southernlargePool.jpg'/>";
     }
 }
 

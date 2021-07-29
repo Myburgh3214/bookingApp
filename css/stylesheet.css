@@ -2,6 +2,9 @@ form {
     text-align: -webkit-center;  
 }
 body {
-         background: white url("/images/hotelImage.jpg");    
+         background: white url("images/hotelImage.jpg");    
 
+}
+img {
+    display: block;
 }
