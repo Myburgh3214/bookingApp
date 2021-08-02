@@ -20,7 +20,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 
   <div class="w3-container w3-margin-top" id="costs">
     <h3>Booking App</h3>
-    <p>Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</p>
+    <p>Put in your requests in the input fields and press the book button and you will be booked at the hotel of your choosing, its as simple as that. If you want to compare all the hotels we provide you with, just simply press the compare button to see the different etc.</p>
   </div>
   <?php if (!$_POST) { ?>
     <form action="index.php" method="post">
@@ -49,7 +49,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
             <option value="Commodore Hotel" id="commodoreHotel" name="commodoreHotel">Commodore Hotel</option>
             <option value="Southern Sun" id="southernSun" name="southernSun">Southern Sun</option>
         </select>
-            <button type="submit" value="Submit">Book</button>        
+            <button type="submit" value="Submit" name="bookBtn" id="bookBtn">Book</button>
+            <button type="submit" value="Submit" name="compareBtn" id="compareBtn">Compare</button>        
+        
     </div>
   </div>
     </form>
@@ -66,17 +68,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
   </div>
   
   <div class="w3-row-padding w3-large w3-center" style="margin:32px 0">
-    <div class="w3-third"><i class="fa fa-map-marker w3-text-red"></i> Portswood Rd, Victoria & Alfred Waterfront, Cape Town, 8002</div>
-    <div class="w3-third"><i class="fa fa-phone w3-text-red"></i> Phone: 021 415 1000</div>
-    <div class="w3-third"><i class="fa fa-envelope w3-text-red"></i> Email: hotels@legacyhotels.co.za</div>
+  <div class="w3-third"><i class="fa fa-map-marker w3-text-red"></i> Portswood Rd, Victoria & Alfred Waterfront, Cape Town, 8002</div>
+  <div class="w3-third"><i class="fa fa-phone w3-text-red"></i> Phone: 021 415 1000</div>
+  <div class="w3-third"><i class="fa fa-envelope w3-text-red"></i> Email: hotels@legacyhotels.co.za</div>
   </div>
 
   <div class="w3-panel w3-red w3-leftbar w3-padding-32">
     <h6><i class="fa fa-info w3-deep-orange w3-padding w3-margin-right"></i> On demand, we can offer playstation, babycall, children care, dog equipment, etc.</h6>
   
             <span class="w3-display-bottomleft w3-padding">Paris</span>
-          </div>
-        </div>
+  </div>
+  </div>
 <!-- End page content -->
 
 <!-- Footer -->
@@ -104,14 +106,26 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
     echo "$firstName $lastName Checkin Date: $checkIn Checkout Date: $checkOut Hotel Name: $hotelName";
     
     /// if statement to switch pictures for the two hotels.
-    if ($hotelName=== "Commodore Hotel"){
-      echo "<img src='images/commodoreHotel.jpg'/>";
-    }else if($hotelName==="Southern Sun"){
-      echo "<img src='images/southernSun.jpg'/>";
-      echo "<img src='images/southernPool.jpg'/>";
-      echo "<img src='images/southernRooms.jpg'/>";
-      echo "<img src='images/southernlargePool.jpg'/>";
+    if ( isset( $_POST['bookBtn'] ) ) { 
+      $hotelName = $_POST["hotelName"];
+    if ($hotelName === "Commodore Hotel"){
+      echo "<img src='images/commodoreOutside.jpg'/>";
+        }else if($hotelName==="Southern Sun"){
+      echo "<img src='images/southernOutside.jpg'/>";
     }
 }
-
+}
 ?>
+<div>
+<?php
+if ( isset( $_POST['compareBtn'] ) ) { 
+  $hotelName = $_POST["hotelName"];
+  echo "Commodore Hotel:
+  Standard Twin Bedroom: R450 per night King Suite: R600 per night Restaurant:Yes Pool: Yes Spa: Yes";
+  echo "<img src='images/commodoreHotel.jpg'/>";
+  echo "Southern Hotel Waterfront:
+  Standard Twin Bedroom: R500 per night King Suite: R700 per night Restaurant:Yes Pool: Yes Spa: No Gym: Yes";
+  echo "<img src='images/southernRooms.jpg'/>";
+}
+?>
+</div>
