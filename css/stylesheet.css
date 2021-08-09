@@ -4,8 +4,58 @@ form {
 }
 img {
     display: flex;
-    width: 1024px;
-    height: 684px;
+    width: 500px;
+    height: 500px;
+    margin-left: 500px;
+}
+input#checkOut {
+    margin: 10px;
+}
+input#checkIn {
+    margin: 10px;
+}
+input#name {
+    margin: 10px;
+}
+input#lastName {
+    margin: 10px;
+}
+select#hotelName {
+    margin: 10px;
+}
+button#bookBtn {
+    webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+button#compareBtn {
+    background-color: white;
+}
+.buttons {
+    margin: 0;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 }
 @media only screen and (min-width: 768px) {
@@ -14,8 +64,61 @@ form {
 }
 img {
     display: flex;
-    width: 1024px;
-    height: 684px;
+    width: 500px;
+    height: 500px;
+    margin-left: 500px;
+}
+input#checkOut {
+    margin: 10px;
+}
+input#checkOut {
+    margin: 10px;
+}
+input#checkIn {
+    margin: 10px;
+}
+input#name {
+    margin: 10px;
+}
+input#lastName {
+    margin: 10px;
+}
+select#hotelName {
+    margin: 10px;
+}
+button#bookBtn {
+    webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+button#compareBtn {
+    background-color: white;
+}
+.buttons {
+    margin: 0;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 }
 @media only screen and (min-width: 1200px) {
@@ -24,7 +127,57 @@ form {
 }
 img {
     display: flex;
-    width: 1024px;
-    height: 684px;
+    width: 500px;
+    height: 500px;
+    margin-left: 500px;
+}
+input#checkOut {
+    margin: 10px;
+}
+input#checkIn {
+    margin: 10px;
+}
+input#name {
+    margin: 10px;
+}
+input#lastName {
+    margin: 10px;
+}
+select#hotelName {
+    margin: 10px;
+}
+button#bookBtn {
+    webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+button#compareBtn {
+    background-color: white;
+}
+.buttons {
+    margin: 0;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 }
