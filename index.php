@@ -21,7 +21,7 @@ body{font-family: Arial, Helvetica, sans-serif}
 
   <div class="w3-container w3-margin-top" id="costs">
     <h1>Booking App</h1>
-    <p><b>Put in your requests in the input fields and press the book button and you will be booked at the hotel of your choosing, its as simple as that. If you want to compare all the hotels we provide you with, just simply press the compare button to see the different etc.</b></p>
+    <p><b>Put in your requests in the input fields and press the book button and you will be booked at the hotel of your choosing, its as simple as that. If you want to compare all the hotels we provide you with, just simply press the compare button to see the different prices and services etc, from each hotel.</b></p>
   </div>
   <?php if (!$_POST) { ?>
     <form action="index.php" method="post">
@@ -51,8 +51,8 @@ body{font-family: Arial, Helvetica, sans-serif}
             <option value="Southern Sun" id="southernSun" name="southernSun">Southern Sun</option>
         </select>
           <div class="buttons">
-            <button type="submit" value="Submit" name="bookBtn" id="bookBtn">Book</button>
-            <button type="submit" value="Submit" name="compareBtn" id="compareBtn">Compare</button>        
+            <button type="submit" value="Submit" name="bookBtn" id="bookBtn">BOOK</button>
+            <button type="submit" value="Submit" name="compareBtn" id="compareBtn">COMPARE</button>        
   </div>
     </div>
   </div>
@@ -115,13 +115,13 @@ body{font-family: Arial, Helvetica, sans-serif}
           $date2=date_create($_POST["checkOut"]);
           $diff=date_diff($date1,$date2);;
           echo $diff->format("%R%a days")*450; 
-      echo "<img src='images/commodoreOutside.jpg'/>";
+      echo "<div><img src='images/commodoreOutside.jpg'/></div>";
         }else if($hotelName==="Southern Sun"){
           $date1=date_create($_POST["checkIn"]);
           $date2=date_create($_POST["checkOut"]);
           $diff=date_diff($date1,$date2);;
           echo $diff->format("%R%a days")*500; 
-      echo "<img src='images/southernOutside.jpg'/>";
+      echo "<div><img src='images/southernOutside.jpg'/></div>";
         
        
     }
@@ -138,7 +138,7 @@ if ( isset( $_POST['compareBtn'] ) ) {
    <div>Restaurant:Yes</div>
    <div>Pool: Yes</div>
    <div> Spa: Yes</div>
-   <img src='images/commodoreHotel.jpg'/>
+   <div><img src='images/commodoreHotel.jpg'/></div>
    </h4>";
   echo "<h4><div>Southern Hotel Waterfront:</div>
   <div>Standard Twin Bedroom: R500 per night</div>

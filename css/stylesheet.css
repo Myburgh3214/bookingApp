@@ -29,13 +29,18 @@ button#bookBtn {
     border: none;
     border-bottom: 1px solid #ccc;
     width: 100%;
+    background-color: black;
+    color: white;
 }
 button#compareBtn {
     padding: 8px;
     display: block;
     border: none;
     border-bottom: 1px solid #ccc;
-    width: 100%;}
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-left: 10px;}
 .buttons {
     margin: 0;
     position: absolute;
@@ -43,6 +48,7 @@ button#compareBtn {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    display: flex;
 }
 select#hotelName {
     padding: 8px;
@@ -86,13 +92,18 @@ button#bookBtn {
     border: none;
     border-bottom: 1px solid #ccc;
     width: 100%;
+    background-color: black;
+    color: white;
 }
 button#compareBtn {
     padding: 8px;
     display: block;
     border: none;
     border-bottom: 1px solid #ccc;
-    width: 100%;}
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-left: 10px;}
 .buttons {
     margin: 0;
     position: absolute;
@@ -100,6 +111,7 @@ button#compareBtn {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    display: flex;
 }
 select#hotelName {
     padding: 8px;
@@ -140,13 +152,18 @@ button#bookBtn {
     border: none;
     border-bottom: 1px solid #ccc;
     width: 100%;
+    background-color: black;
+    color: white;
 }
 button#compareBtn {
     padding: 8px;
     display: block;
     border: none;
     border-bottom: 1px solid #ccc;
-    width: 100%;}
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-left: 10px;}
 .buttons {
     margin: 0;
     position: absolute;
@@ -154,6 +171,7 @@ button#compareBtn {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    display: flex;
 }
 select#hotelName {
     padding: 8px;
