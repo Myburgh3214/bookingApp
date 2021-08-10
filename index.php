@@ -105,7 +105,7 @@ body{font-family: Arial, Helvetica, sans-serif}
     $checkIn = $_POST["checkIn"];
     $checkOut = $_POST["checkOut"];
     $hotelName = $_POST["hotelName"];
-    echo "<h3><div>First Name: $firstName</div> <div>Last Name: $lastName</div> <div>Checkin Date: $checkIn</div> <div>Checkout Date: $checkOut</div><div> Hotel Name: $hotelName</div><div>Total = R ";
+    echo "<h3><div>First Name: $firstName</div> <div>Last Name: $lastName</div> <div>Checkin Date: $checkIn</div> <div>Checkout Date: $checkOut</div><div> Hotel Name: $hotelName</div>Total = R ";
     
     /// if statement to switch pictures for the two hotels.
     if ( isset( $_POST['bookBtn'] ) ) { 
@@ -127,7 +127,6 @@ body{font-family: Arial, Helvetica, sans-serif}
     }
 }
 }
-
 
 ?>
 <div>
