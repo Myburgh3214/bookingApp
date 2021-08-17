@@ -25,50 +25,51 @@ body{font-family: Arial, Helvetica, sans-serif}
   </div>
   <?php if (!$_POST) { ?>
     <form action="index.php" method="post">
-  <div class="w3-row-padding">
-    <div class="w3-col m3">
-      <label><i class="fa fa-calendar-o"></i> Check In:</label>
-      <input class="w3-input w3-border" type="date" placeholder="DD MM YYYY" id="checkIn" name="checkIn" required>
-    </div>
-    <div class="w3-col m3">
-      <label><i class="fa fa-calendar-o"></i> Check Out:</label>
-      <input class="w3-input w3-border" type="date" placeholder="DD MM YYYY" name="checkOut" id="checkOut" required>
-    </div>
-    <div class="w3-col m2">
-      <label><i class="fa fa-male"></i> First Name:</label>
-      <input class="w3-input w3-border" type="text" placeholder="First Name" name="name" id="name" required>
-    </div>
-    <div class="w3-col m2">                   
-      <label><i class="fa fa-child"></i> Last Name:</label>
-      <input class="w3-input w3-border" type="text" name="lastName" id="lastName" placeholder="Last Name" required>
-    </div>
-    <div class="w3-col m2">
+      <div class="w3-row-padding">
+        <div class="w3-col m3">
+          <label><i class="fa fa-calendar-o"></i> Check In:</label>
+          <input class="w3-input w3-border" type="date" placeholder="DD MM YYYY" id="checkIn" name="checkIn" required>
+        </div>
+        <div class="w3-col m3">
+          <label><i class="fa fa-calendar-o"></i> Check Out:</label>
+          <input class="w3-input w3-border" type="date" placeholder="DD MM YYYY" name="checkOut" id="checkOut" required>
+        </div>
+        <div class="w3-col m2">
+          <label><i class="fa fa-male"></i> First Name:</label>
+          <input class="w3-input w3-border" type="text" placeholder="First Name" name="name" id="name" required>
+        </div>
+        <div class="w3-col m2">                   
+          <label><i class="fa fa-child"></i> Last Name:</label>
+          <input class="w3-input w3-border" type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+        </div>
+        <div class="w3-col m2">
                 
-
-      <label><i class="fa fa-search"></i> Select your hotel:</label>
-        <select id="hotelName" name="hotelName">
-            <option value="Commodore Hotel" id="commodoreHotel" name="commodoreHotel">Commodore Hotel</option>
-            <option value="Southern Sun" id="southernSun" name="southernSun">Southern Sun</option>
-        </select>
-          <div class="buttons">
-            <button type="submit" value="Submit" name="bookBtn" id="bookBtn">BOOK</button>
-            <button type="submit" value="Submit" name="compareBtn" id="compareBtn">COMPARE</button>        
-  </div>
-    </div>
-  </div>
+          <label><i class="fa fa-search"></i> Select your hotel:</label>
+          <select id="hotelName" name="hotelName">
+              <option value="Commodore Hotel" id="commodoreHotel" name="commodoreHotel">Commodore Hotel</option>
+              <option value="Southern Sun" id="southernSun" name="southernSun">Southern Sun</option>
+          </select>
+           
+        </div>
+        </div>
+        <div class="buttons"> 
+          <button type="submit" value="Submit" name="bookBtn" id="bookBtn">BOOK</button>
+          <button type="submit" value="Submit" name="compareBtn" id="compareBtn">COMPARE</button>
+        </div>
+      </div>
     </form>
-  <div class="w3-row-padding" id="about">
-    <div class="w3-col l4 12">
-      <div>
-      <h3>About</h3>
-      <h6></h6>
-    <p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i class="fa fa-cc-paypal w3-large"></i></p>
+      <div class="w3-row-padding" id="about">
+      <div class="w3-col l4 12">
+      <div class="about">
+        <h3>About</h3>
+        <h6></h6>
+          <p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i class="fa fa-cc-paypal w3-large"></i></p>
     </div>
     <div class="w3-col l8 12">
         
      
     </div>
-  </div>
+    </div>
   
   <div class="w3-row-padding w3-large w3-center" style="margin:32px 0">
   <div class="w3-third"><i class="fa fa-map-marker w3-text-red"></i> Portswood Rd, Victoria & Alfred Waterfront, Cape Town, 8002</div>
@@ -81,18 +82,6 @@ body{font-family: Arial, Helvetica, sans-serif}
   
   </div>
   </div>
-<!-- End page content -->
-
-<!-- Footer -->
-<footer class="w3-padding-32 w3-black w3-center w3-margin-top">
-  <h5>Find Us On</h5>
-  <div class="w3-xlarge w3-padding-16">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
@@ -105,6 +94,7 @@ body{font-family: Arial, Helvetica, sans-serif}
     $checkIn = $_POST["checkIn"];
     $checkOut = $_POST["checkOut"];
     $hotelName = $_POST["hotelName"];
+    $footer = $POST["footer"];
     echo "<h3><div>First Name: $firstName</div> <div>Last Name: $lastName</div> <div>Checkin Date: $checkIn</div> <div>Checkout Date: $checkOut</div><div> Hotel Name: $hotelName</div>Total = R ";
     
     /// if statement to switch pictures for the two hotels.
@@ -122,32 +112,43 @@ body{font-family: Arial, Helvetica, sans-serif}
           $diff=date_diff($date1,$date2);;
           echo $diff->format("%R%a days")*500; 
       echo "<div><img src='images/southernOutside.jpg'/></div>";
-        
-       
+      include('includes/footer.php');       
     }
 }
 }
 
 ?>
 <div>
-<?php
-if ( isset( $_POST['compareBtn'] ) ) { 
+  <?php
+    if ( isset( $_POST['compareBtn'] ) ) { 
 
-  echo "<h4><div>Commodore Hotel:</div>
-  <div>Standard Twin Bedroom: R450 per night</div> 
-   <div>Restaurant:Yes</div>
-   <div>Pool: Yes</div>
-   <div> Spa: Yes</div>
-   <div><img src='images/commodoreHotel.jpg'/></div>
-   </h4>";
-  echo "<h4><div>Southern Hotel Waterfront:</div>
-  <div>Standard Twin Bedroom: R500 per night</div>
-   <div>Restaurant:Yes Pool: Yes</div> <div>Spa: No</div>
-    <div>Gym: Yes</div>
-    </h4>";
-    
-  echo "<div><img src='images/southernRooms.jpg'/></div>";
+    echo "<h4 class= leftsideText><div>Commodore Hotel:</div>
+    <div>Standard Twin Bedroom: R450 per night</div> 
+      <div>Restaurant:Yes</div>
+      <div>Pool: Yes</div>
+      <div> Spa: Yes</div>
+      </h4>";
+      echo "<img src='images/commodoreHotel.jpg'/>";
+
+    echo "<h4 class= rightsideText><div>Southern Hotel Waterfront:</div>
+    <div>Standard Twin Bedroom: R500 per night</div>
+      <div>Restaurant:Yes Pool: Yes</div> 
+      <div>Spa: No</div>
+      <div class= right4>Gym: Yes</div>
+      </h4>";
+    echo "<img src='images/southernRooms.jpg'/>";
 
 }
-?>
+  ?>
 </div>
+<footer id ="footer" name="footer" class="w3-padding-32 w3-black w3-center w3-margin-top">
+  <h5>Find Us On</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
