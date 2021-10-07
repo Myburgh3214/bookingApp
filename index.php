@@ -88,13 +88,19 @@ body{font-family: Arial, Helvetica, sans-serif}
 </body>
 </html>
 <?php } else {
+    class Welcomeclass {
+      function __construct() {
+        echo "Thank you for choosing us";
+      }
+    }
     
+    $welCon = new Welcomeclass();
     $firstName = $_POST["name"];
     $lastName = $_POST["lastName"];
     $checkIn = $_POST["checkIn"];
     $checkOut = $_POST["checkOut"];
     $hotelName = $_POST["hotelName"];
-    $footer = $POST["footer"];
+    $footer = $_POST["footer"];
     echo "<h3><div>First Name: $firstName</div> <div>Last Name: $lastName</div> <div>Checkin Date: $checkIn</div> <div>Checkout Date: $checkOut</div><div> Hotel Name: $hotelName</div>Total = R ";
     
     /// if statement to switch pictures for the two hotels.
