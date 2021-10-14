@@ -121,7 +121,7 @@ $welcome->TestMethod(); // expected output: Test string
 
 class enjoyClass {
   function __construct() {
-    echo ", enjoy your stay!!";
+    echo ". Enjoy Your Stay!!";
   }
 }
 
