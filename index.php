@@ -119,6 +119,16 @@ $welcome = new welcomeClass();
 
 $welcome->TestMethod(); // expected output: Test string
 
+class enjoyClass {
+  function __construct() {
+    echo ", enjoy your stay!!";
+  }
+}
+
+$stay = new enjoyClass();
+
+//expected output New object made!
+
     
     $firstName = $_POST["name"];
     $lastName = $_POST["lastName"];
