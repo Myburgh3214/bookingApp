@@ -102,13 +102,24 @@
 </html>
 <?php } else {
 
-    class Welcomeclass {
-      function __construct() {
-        echo "Thank you for choosing us";
-      }
+   class welcomeClass {
+
+    public $ExampleVariable = "Thank You For Choosing Us";
+
+    public function TestMethod() {
+        
+        echo $this->ExampleVariable;
     }
+
+}
+
+$welcome = new welcomeClass();
+
+// Adding a new property to the object
+
+$welcome->TestMethod(); // expected output: Test string
+
     
-    $welCom = new Welcomeclass();
     $firstName = $_POST["name"];
     $lastName = $_POST["lastName"];
     $checkIn = $_POST["checkIn"];
